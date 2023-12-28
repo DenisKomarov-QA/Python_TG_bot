@@ -9,7 +9,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
-	sti = open('img/QA.png', 'rb')
+	sti = open('QA.png', 'rb')
 	bot.send_photo(message.chat.id, sti)
     #клавиатура
 	markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -27,7 +27,7 @@ def lalala(message):
 	if message.chat.type == 'private':
 
 		if message.text == 'Операторы SQL':
-			foto = open("img/sql.png", "rb")
+			foto = open("sql.png", "rb")
 			bot.send_photo(message.chat.id, foto)
 			bot.send_message(message.chat.id, 
             '''*SELECT* - _Какой столбик вывести_,
@@ -82,7 +82,7 @@ def lalala(message):
 
 
 		elif message.text == 'Операторы Linux':
-			foto = open("img/Linux.png", "rb")
+			foto = open("Linux.png", "rb")
 			bot.send_photo(message.chat.id, foto)
 			bot.send_message(message.chat.id, 
 '''*pwd* - _Показать текущее местоположение (папку)_
@@ -129,7 +129,7 @@ def lalala(message):
 
 
 		elif message.text == 'Операторы Git':
-			foto = open("img/Git.png", "rb")
+			foto = open("Git.png", "rb")
 			bot.send_photo(message.chat.id, foto)
 			bot.send_message(message.chat.id, 
 '''*git init* - _Сделать из любой папки git папку_
@@ -170,7 +170,7 @@ def lalala(message):
 
 
 		elif message.text == 'Структура багрепорта':
-			foto = open("img/Bug.png", "rb")
+			foto = open("Bug.png", "rb")
 			bot.send_photo(message.chat.id, foto)
 			bot.send_message(message.chat.id, 
 '''*1.~Summari(Заголовок)* - [bug] [web] [прод] - Заголовок. Что , где и при каких условиях?
