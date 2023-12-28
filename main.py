@@ -173,7 +173,7 @@ def lalala(message):
 			foto = open("Bug.png", "rb")
 			bot.send_photo(message.chat.id, foto)
 			bot.send_message(message.chat.id, 
-'''*1.~Summari(Заголовок)* - [bug] [web] [прод] - Заголовок. Что , где и при каких условиях?
+'''*1.~Summary (Заголовок)* - [bug] [web] [прод] - Заголовок. Что , где и при каких условиях?
 
 *2.~Description (описание)* - пример, нет картинок у новостей на сайте на главной
 
